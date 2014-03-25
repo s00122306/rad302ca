@@ -1,0 +1,50 @@
+﻿@model CA1S00122306.Models.Trip
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Trip</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TripName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TripName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StartDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StartDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EndDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EndDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Viable)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Viable)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Complete)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Complete)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.TripId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

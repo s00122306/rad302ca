@@ -1,0 +1,53 @@
+﻿@model CA1S00122306.Models.Leg
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Leg</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StartLocation)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StartLocation)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EndLocation)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EndLocation)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StartDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StartDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EndDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EndDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TripId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TripId)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
